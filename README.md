@@ -17,17 +17,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3) Create your local `.env` (never commit it):
+3) Create your local
 
-```bash
-cp .env.example .env
-```
+.env.example 
 
-Then edit `.env` and set your Hugging Face token:
+add-->
+HF_TOKEN=YOUR_HUGGINGFACE_TOKEN_HERE
+HF_MODEL=meta-llama/Llama-3.1-8B-Instruct
+PORT=8000
+DATASET_PATH=./data/new_data.csv
 
-```
-HF_TOKEN=your_real_token_here
-```
 
 ## Run the server
 
